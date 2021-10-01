@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+    <title>Car list App </title>
+  </head>
+<body class="bg-dark text-white">
+    <div class="container-fluid ">
+        <div class="row mt-4">
+            <form class="mx-auto col-lg-8" id="car-form">
+                <h3 class="text-center">Car List Application</h3>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Car Name</label>
+                  <input type="text" class="form-control bg-dark text-white" id="name" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Car Company</label>
+                  <input type="text" class="form-control bg-dark text-white" id="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Car Color</label>
+                    <input type="text" class="form-control bg-dark text-white" id="color">
+                  </div>
+
+                <button type="submit" class="btn btn-outline-success"><i class="fa fa-plus"></i></button>
+              </form>
+        </div>
+
+        <table class="table table-dark mt-4">
+            <thead>
+              <tr>
+
+                <th scope="col">Name</th>
+                <th scope="col">Company</th>
+                <th scope="col">Color</th>
+                <th scope="col">delete</th>
+              </tr>
+            </thead>
+            <tbody id="car-list"></tbody>
+          </table>
+    </div>
+
+    <script src="codes.js"></script>
+</body>
+</html>
